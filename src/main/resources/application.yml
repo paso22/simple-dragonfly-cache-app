@@ -1,1 +1,15 @@
-spring.application.name=simple-dragonfly-cache-app
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/dictionarydb
+    username: postgres
+    password: postgres
+  jpa:
+    hibernate:
+      ddl-auto: update
+  data:
+    redis:
+      host: localhost
+      port: 6380
+
+server:
+  port: 8080
